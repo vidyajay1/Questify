@@ -1,6 +1,6 @@
 # Questify
 
-Questify turns a real-world goal into an RPG-style learning quest. Give it something you want to accomplish; for example, “Learn LangGraph” — and it searches the web for related material, then returns a quest with a title, difficulty, time estimate, objectives, a boss battle, XP, and recommended resources.
+Questify turns a real-world goal into an RPG-style learning quest. Give it something you want to accomplish; for example, “Learn LangGraph”. and it searches the web for related material, then returns a quest with a title, difficulty, time estimate, objectives, a boss battle, XP, and recommended resources.
 
 ## Status
 
