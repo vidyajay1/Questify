@@ -1,3 +1,7 @@
+Questify
+
+Questify turns a real-world goal into an epic RPG quest. Enter something you want to accomplish, and the app gathers related web resources, then forges a quest with a title, difficulty, actionable objectives, a boss battle, rewards, and recommended reading to help you complete it. 
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
