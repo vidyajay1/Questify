@@ -1,37 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Update Questify README summary
 
-## Getting Started
+Work in [/Users/tech/Documents/questify](/Users/tech/Documents/questify). Before any edits, call move_agent_to_root with that path.
 
-First, run the development server:
+The current [README.md](/Users/tech/Documents/questify/README.md) already matches the structure you listed: Getting Started, Learn More, Deploy on Vercel, then # Questify. The earlier plan restructured it (product intro first, drop Learn More / Deploy). That was unnecessary — keep the existing layout.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+What Questify does (from the app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Questify is a Next.js app that turns a real-world goal into an RPG-style quest:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+User types a goal (e.g. learn guitar, run a marathon) in [src/components/QuestForm.tsx](src/components/QuestForm.tsx)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[src/app/api/quest/route.ts](src/app/api/quest/route.ts) searches You.com for related resources, then uses the You.com Research API as a “quest master” ([src/lib/generate-quest.ts](src/lib/generate-quest.ts))
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+The result is shown as a quest scroll: title, difficulty (Easy–Legendary), numbered objectives, a boss battle, rewards, and recommended resource links ([src/components/QuestCard.tsx](src/components/QuestCard.tsx))
+
+Copy can follow the existing product voice from [src/app/layout.tsx](src/app/layout.tsx) / [src/app/page.tsx](src/app/page.tsx): “Turn Goals Into Epic Quests.”
+
+README structure
+
+Keep every existing section as-is:
+
+
+
+
+
+Getting Started (dev server, localhost:3000, app/page.tsx, next/font / Geist)
+
+
+
+Learn More
+
+
+
+Deploy on Vercel
+
+
+
 # Questify
+
+Only change: under # Questify, add 1 short paragraph summarizing the product (real-world goals → RPG quests with objectives, boss battle, rewards, and recommended resources). Do not add env-var docs, do not reorder sections, do not remove Next.js boilerplate.
+
+No other files change.
