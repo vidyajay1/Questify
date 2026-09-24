@@ -1,4 +1,4 @@
-## Questify
+# Questify
 
 Questify turns a real-world goal into an epic RPG quest. Enter something you want to accomplish, and the app gathers related web resources, then forges a quest with a title, difficulty, actionable objectives, a boss battle, rewards, and recommended reading to help you complete it. 
 
@@ -38,4 +38,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Questify
+
