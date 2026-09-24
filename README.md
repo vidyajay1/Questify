@@ -1,51 +1,46 @@
-Update Questify README summary
+Questify
 
-Work in [/Users/tech/Documents/questify](/Users/tech/Documents/questify). Before any edits, call move_agent_to_root with that path.
+Questify turns a real-world goal into an epic RPG quest. Enter something you want to accomplish, and the app gathers related web resources, then forges a quest with a title, difficulty, actionable objectives, a boss battle, rewards, and recommended reading to help you complete it. 
 
-The current [README.md](/Users/tech/Documents/questify/README.md) already matches the structure you listed: Getting Started, Learn More, Deploy on Vercel, then # Questify. The earlier plan restructured it (product intro first, drop Learn More / Deploy). That was unnecessary — keep the existing layout.
+This is a Next.js project bootstrapped with [create-next-app](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-What Questify does (from the app)
+Getting Started
 
-Questify is a Next.js app that turns a real-world goal into an RPG-style quest:
+First, run the development server:
 
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 
+Open http://localhost:3000 with your browser to see the result.
 
+You can start editing the page by modifying app/page.tsx. The page auto-updates as you edit the file.
 
-
-User types a goal (e.g. learn guitar, run a marathon) in [src/components/QuestForm.tsx](src/components/QuestForm.tsx)
-
-
-
-[src/app/api/quest/route.ts](src/app/api/quest/route.ts) searches You.com for related resources, then uses the You.com Research API as a “quest master” ([src/lib/generate-quest.ts](src/lib/generate-quest.ts))
-
-
-
-The result is shown as a quest scroll: title, difficulty (Easy–Legendary), numbered objectives, a boss battle, rewards, and recommended resource links ([src/components/QuestCard.tsx](src/components/QuestCard.tsx))
-
-Copy can follow the existing product voice from [src/app/layout.tsx](src/app/layout.tsx) / [src/app/page.tsx](src/app/page.tsx): “Turn Goals Into Epic Quests.”
-
-README structure
-
-Keep every existing section as-is:
-
-
-
-
-
-Getting Started (dev server, localhost:3000, app/page.tsx, next/font / Geist)
-
-
+This project uses [next/font](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load Geist, a new font family for Vercel.
 
 Learn More
 
+To learn more about Next.js, take a look at the following resources:
 
+
+
+
+
+Next.js Documentation - learn about Next.js features and API.
+
+
+
+Learn Next.js - an interactive Next.js tutorial.
+
+You can check out the Next.js GitHub repository - your feedback and contributions are welcome!
 
 Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.
 
+Check out our Next.js deployment documentation for more details.
 
-# Questify
-
-Only change: under # Questify, add 1 short paragraph summarizing the product (real-world goals → RPG quests with objectives, boss battle, rewards, and recommended resources). Do not add env-var docs, do not reorder sections, do not remove Next.js boilerplate.
-
-No other files change.
